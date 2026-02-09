@@ -1,7 +1,8 @@
 body {
     background-color: rgb(255, 69, 69);
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* 👈 THIS IS THE KEY */
+    align-items: center;     /* centers horizontally */
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
 .topnav {
     border-radius: 25px;
     height: fit-content;
-    display: inline-flex;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);  
@@ -64,4 +65,41 @@ ul.topnav li:hover a {
 ul.topnav li a.active {
   color: black;
   font-size: larger;
+}
+
+.content h1 {
+    font-size: 70px;
+}
+
+.content {
+    margin-top: 40px;
+    text-align: center;
+}
+.content p {
+    font-size: 45px;
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);;
+}
+
+.content p:hover {
+    transform: scale(1.02);
+}
+
+.content ul {
+    font-size: 50px;
+    max-width: 1200px;
+    text-align: left;
+    margin: 50px;
+}
+
+.title {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid black;
+    display: inline-block;
+    width: 800px;
 }
