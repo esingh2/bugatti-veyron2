@@ -1,59 +1,67 @@
 body {
-  margin: 0;
-  padding: 0;
+    background-color: rgb(255, 69, 69);
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h2, p {
-  margin: 10px;
+.topnav {
+    border-radius: 25px;
+    height: fit-content;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+    align-items: center;
+    padding: 0 10px;
+    margin: 50px 0 0 0;
 }
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #b90303;
-  position: sticky;
+.topnav li {
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px 14px;
+    margin: 0 12px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
-ul.topnav li {
-  float: left;
-  border-right: 0.5px solid #ffffff;
+
+.topnav li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
 }
 
-ul.topnav li:last-child {
-  border-right: none;
-  border-bottom: none;
+.topnav li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
 }
 
-ul.topnav li a {
-  font-size: 24px;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 13px 106px;
-  text-decoration: none;
+.topnav li a { 
+    display: block; 
+    color: white; 
+    text-decoration: none; 
 }
 
-ul.topnav li a:hover:not(.active) {
-  background-color: #640000;
+ul.topnav li:hover a {
+  color: black;
+  font-size: larger;
 }
 
 ul.topnav li a.active {
-  background-color: #36454F;
-}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {
-    float: none;
-    border-right: none;
-    border-bottom: 0.5px solid white;
-  } 
-  ul.topnav li a {
-    font-size: 24px;
-    padding: 7px 0px;
-}
+  color: black;
+  font-size: larger;
 }
