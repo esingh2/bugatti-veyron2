@@ -155,3 +155,22 @@ ul.topnav li a.active {
     border-radius: 15px;
     margin: 20px;
 }
+
+.veyron-key {
+    height: 500px;
+    border-radius: 15px;
+}
+
+.veyron-l {
+    height: 500px;
+    border-radius: 15px;
+}
+
+.veyron-perf {
+    width: 799px;
+    border-radius: 15px;
+}
+
+.veyron-dev {
+    border-radius: 15px;
+}
