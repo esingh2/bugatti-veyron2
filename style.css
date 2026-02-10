@@ -159,6 +159,8 @@ ul.topnav li a.active {
 .veyron-l {
     height: 500px;
     border-radius: 15px;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
 }
 
 .veyron-perf {
