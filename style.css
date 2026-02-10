@@ -156,11 +156,6 @@ ul.topnav li a.active {
     margin: 20px;
 }
 
-.veyron-key {
-    height: 500px;
-    border-radius: 15px;
-}
-
 .veyron-l {
     height: 500px;
     border-radius: 15px;
@@ -169,6 +164,8 @@ ul.topnav li a.active {
 .veyron-perf {
     width: 799px;
     border-radius: 15px;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
 }
 
 .veyron-dev {
@@ -191,4 +188,13 @@ ul.topnav li a.active {
 
 .feature-link:hover {
     text-decoration: underline;
+}
+
+.spec-list li {
+    width: 1900px;
+}
+
+.spec-list {
+    padding-left: 15px;
+    margin-left: 0;
 }
