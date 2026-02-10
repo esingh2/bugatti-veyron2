@@ -177,5 +177,18 @@ ul.topnav li a.active {
     display: block;
     margin: 15px auto;
     aspect-ratio: 16 / 9;
+}
 
+.features-list li {
+    width: 2000px;
+
+}
+
+.feature-link {
+    color: white;
+    text-decoration: none;
+}
+
+.feature-link:hover {
+    text-decoration: underline;
 }
