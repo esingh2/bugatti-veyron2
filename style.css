@@ -173,4 +173,9 @@ ul.topnav li a.active {
 
 .veyron-dev {
     border-radius: 15px;
+    width: 900px;
+    display: block;
+    margin: 15px auto;
+    aspect-ratio: 16 / 9;
+
 }
